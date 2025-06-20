@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div style="text-align: center;">
+
+    
+        <h1>Benjamin Saavedra</h1>
+    
+    <img src="{% static 'principal\imagenes\gato.PNG' %}" width="150" height="150">
+
+    <p>Hola profe como le va? Imagine que aqui hay una descripcion super detallada de mi persona <br>
+    mire puse una salto de linea, si es que soy buenisimo</p>
+    </div>
+    
+    <div style="position: absolute; top: 300px; left: 490px;">
+        <table>
+        <thead>
+            <tr>
+                
+                <th>Año</th>
+                <th>Colegio</th>
+                <th>Completado</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2000&#8209;2005</td>
+                <td>Juan Perez</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>2006&#8209;2010</td>
+                <td>Michigan</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+        <style>
+            table { 
+                border-collapse: collapse;
+                width: 20%;
+            }
+            th,td {
+                border: 2px solid black;
+                padding: 20px;
+                text-align: left;
+            }
+        </style>
+        
+    </table>
+    
+        <ul>
+            <li>2000-2005 Juan Perez No</li>
+            <li>2006-2010 Michigan No</li>
+        
+        </ul>
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            Apreta aqui para descubrir los secretos detras del golpe de estado
+        </a>
+
+        <h2>Ingresa tu correo para enviarte una pc gamer 100% gratis</h2>
+        <p>Email: <input type="text" name="email" placeholder="Escribe tu email aqui"></p>
+
+
+        
+        <form>
+            <p>Como te encuentras</p>
+            <label>
+                <input type="radio" name="Estado" value="Bien">Bien
+            </label><br>
+            <label>
+                <input type="radio" name="Estado" value="Mal">Mal
+            </label><br>
+            <label>
+                <input type="radio" name="Estado" value="Medio">Más o menos
+            </label>
+        </form>
+
+        <form>
+            <p>¿Que redes sociales usas?</p>
+            <label>
+                <input type="checkbox" name="Social" value="Insta">Instagram
+            </label><br>
+            <label>
+                <input type="checkbox" name="Social" value="Face">Facebook
+            </label><br>
+            <label>
+                <input type="checkbox" name="Social" value="Tik">TikTok
+            </label><br>
+        </form>
+        <br>
+        <button type="submit">Enviar</button>
+        <p></p>
+
+    </div>
+</body>
+</html>

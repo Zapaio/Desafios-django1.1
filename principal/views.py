@@ -17,3 +17,11 @@ def hola(request,):
 
 def numero(request,):
     return HttpResponse(f"A continuacion, un numero aleatorio entre 0 y 100 =  {random.randint(0,100)}")
+
+def inicio(request):
+    contexto = {"nombre": "Benjamin"}
+    return render(request, "principal/index.html",contexto)
+
+def curriculum(request):
+    return render(request,"principal/curriculum.html")
+
